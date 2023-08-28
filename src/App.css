@@ -1,38 +1,255 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 8px;
+  padding: 8px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  padding-right: 40px;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec1 {
+  display: flex;
+  height: 400px;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 400px;
+  background-color: #89d6e1;
+  
+}
+.right {
+  width: 70%;
+  height: 400px;
+}
+.image {
+  width: 100%;
+  height: 100%;
+}
+.sec2 {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 10px;
+  background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_52683-59881.jpg");
+  display: flex;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.img3 {
+  height: 500px;
+  background-size: cover;
+}
+.sec3 {
+  width: 100%;
+  height: 180px;
+  background-color: #89d6e1;
+  margin-bottom: 10px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sec3 h1 {
+  font-size: 40px;
+  font-weight: normal;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sec4 {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  margin-bottom: 23px;
+  gap: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.left2 {
+  width: 50%;
+  height: 460px;
+  background-color: #89d6e1;
+}
+.left2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
+}
+.fas {
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.left2 p {
+  padding-bottom: 0px;
+}
+.right2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
+}
+.right2 {
+  width: 50%;
+  height: 480px;
+  background-color: #89d6e1;
+}
+.sec5 {
+  width: 100%;
+  height: 600px;
+  background-color: #89d6e1;
+  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px;
+}
+.sec5 h3 {
+  font-weight: normal;
+  font-size: 40px;
+  margin-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+
+.btnsend {
+  padding: 10px 5px;
+  border: 3px solid #1C6FAF;
+  font-size: 1rem;
+  color: #1C6FAF;
+  display: inline-block;
+  
+}
+nav a {
+  text-decoration: none;
+}
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: white;
+  font-size: 18px;
+  visibility: hidden;
+  color: #1C6FAF;
+  right: 0px;
+  width: 100%;
+  text-align: center;
+}
+.fa-caret-down {
+  color: #1C6FAF;
+}
+.dropdownlinks {
+  color: #1C6FAF;
+}
+header h5 {
+  color: #1C6FAF;
+}
+.linkitems {
+  padding: 0px;
+}
+.links {
+  position: relative;
+  padding-right: 12px;
+}
+.linkitems:hover {
+  color: green;
+}
+.links:hover .dropdown {
+  display: flex;
+  visibility: visible;
+}
+.subleft {
+}
+.subleft h1 {
+  font-size: 30px;
+  font-weight: normal;
+  text-align: center;
+}
+.subleft p {
+  text-align: center;
+}
+.subleft a {
+  margin: 20px;
+  text-decoration: none;
+}
+.fa {
+  padding-right: 5px;
+}
+.img3 {
+  background-size: cover;
+  width: 100%;
+}
+hr {
+  width: 30px;
+  color: black;
+  background-color: black;
+  border-top: 3px solid black;
+}
+.subsection {
+  width: 480px;
+  height: 420px;
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.subsection p {
+  text-align: center;
+  line-height: 19px;
+}
+.fas {
+  font-size: 50px;
+}
+.left2container {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.left2container p {
+  text-align: center;
+}
+.sec7 {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #CBE6EA;
+  height: 120px;
+  margin-bottom: 15px;
+}
+.boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 40px;
+}
+.box {
+  width: 200px;
+  height: 250px;
+  text-align: center;
+}
+.box h1 {
+  font-weight: normal;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+
+
+
+
+
